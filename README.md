@@ -4,7 +4,7 @@ This project aims to generate text in the style of Shakespearean English using R
 
 ## Data Collection
 
-All scenes from the Romeo and Juliet play were collected [open sourced shakespearean play archive](https://www.opensourceshakespeare.org/views/plays/play_view.php?WorkID=romeojuliet&Scope=entire&pleasewait=1&msg=pl). Each act and its scenes are stored in `datacollection/scenes`. After collecting the scenes,basic text preprocessing steps were performed as outlined in `datacollection/TextPreprocessor.py`. This involved removing extra spaces, HTML tags, and numbers from the text. Additionally, we removed stage directions that were present in the scenes to focus solely on the dialogue and monologues. The resulting monologues were consolidated into the  `datacollection/allmonologues.txt` file using `datacollection/combine_all_monologues.py`. Each monologue is separated by a new line for ease of use in subsequent data processing and modeling stages. A wordcloud of the monologues can be seen as follows:
+All scenes from the Romeo and Juliet play were collected [open sourced shakespearean play archive](https://www.opensourceshakespeare.org/views/plays/play_view.php?WorkID=romeojuliet&Scope=entire&pleasewait=1&msg=pl). Each act and its scenes are stored in [`datacollection/scenes`](https://github.com/japnitahuja/shakespearean-text-predictor/tree/main/datacollection/scenes). After collecting the scenes,basic text preprocessing steps were performed as outlined in [`datacollection/TextPreprocessor.py`](https://github.com/japnitahuja/shakespearean-text-predictor/blob/main/datacollection/TextPreprocessor.py). This involved removing extra spaces, HTML tags, and numbers from the text. Additionally, we removed stage directions that were present in the scenes to focus solely on the dialogue and monologues. The resulting monologues were consolidated into the  [`datacollection/allmonologues.txt`](https://github.com/japnitahuja/shakespearean-text-predictor/blob/main/datacollection/allmonologues.txt) file using [`datacollection/combine_all_monologues.py`](https://github.com/japnitahuja/shakespearean-text-predictor/blob/main/datacollection/combine_all_monologues.py). Each monologue is separated by a new line for ease of use in subsequent data processing and modeling stages. A wordcloud of the monologues can be seen as follows:
 
 ![image](https://github.com/japnitahuja/shakespearean-text-predictor/assets/10168783/43d9a9ce-b83b-4e4b-8cdb-2c3679204647)
 
@@ -33,7 +33,7 @@ To generate Shakespearean-style text, the model takes a seed sequence as input a
 
 ## Usage
 
-To run this project, open `Shakespearean_bot.ipynb` on google collab. Run each cell there to train the model and then deploy on flask. Demo of the project is as follows:
+To run this project, open [`Shakespearean_bot.ipynb`](https://github.com/japnitahuja/shakespearean-text-predictor/blob/main/Shakespearean_Bot.ipynb) on google collab. Run each cell there to train the model and then deploy on flask. Demo of the project is as follows:
 
 https://github.com/japnitahuja/shakespearean-text-predictor/assets/10168783/2dcf4ffb-01fd-472e-ad25-f54ebc9944ba
 
@@ -43,7 +43,7 @@ Contributions to this project are welcome. If you have any ideas or improvements
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/japnitahuja/shakespearean-text-predictor/blob/main/LICENSE) file for details.
 
 
 
